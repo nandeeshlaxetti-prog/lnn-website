@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(req: NextRequest) {
-  const publicPaths = ['/', '/services', '/contact', '/blog', '/api/public'];
+  const publicPaths = ['/', '/services', '/contact', '/blog', '/about', '/team', '/api/public'];
   const { pathname } = req.nextUrl;
 
   // allow all public paths
