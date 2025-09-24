@@ -1,0 +1,22 @@
+{
+  "firmName": "LNN Legal",
+  "address": {
+    "street": "1234 Legal Plaza",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001",
+    "fullAddress": "1234 Legal Plaza, New York, NY 10001"
+  },
+  "phone": "(555) 123-4567",
+  "email": "info@lnnlegal.com",
+  "hours": {
+    "weekdays": "9:00 AM - 6:00 PM",
+    "saturday": "10:00 AM - 2:00 PM",
+    "sunday": "Closed"
+  },
+  "socialMedia": {
+    "linkedin": "https://linkedin.com/company/lnnlegal",
+    "twitter": "https://twitter.com/lnnlegal"
+  }
+}
+

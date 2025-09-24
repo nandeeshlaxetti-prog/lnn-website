@@ -1,0 +1,72 @@
+<svg width="360" height="216" viewBox="0 0 360 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2937"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0.3"/>
+      <stop offset="70%" style="stop-color:#D4AF37;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="360" height="216" fill="url(#bg)" rx="12"/>
+  
+  <!-- Glow effect -->
+  <rect width="360" height="216" fill="url(#glow)" rx="12"/>
+  
+  <!-- Family -->
+  <g transform="translate(180, 108)">
+    <!-- Parent figures -->
+    <g transform="translate(-20, 0)">
+      <!-- Adult 1 -->
+      <circle cx="0" cy="-15" r="8" fill="#D4AF37" opacity="0.9"/>
+      <rect x="-6" y="-7" width="12" height="20" fill="#D4AF37" opacity="0.8"/>
+      <rect x="-8" y="13" width="16" height="8" fill="#D4AF37" opacity="0.7"/>
+    </g>
+    
+    <g transform="translate(20, 0)">
+      <!-- Adult 2 -->
+      <circle cx="0" cy="-15" r="8" fill="#D4AF37" opacity="0.9"/>
+      <rect x="-6" y="-7" width="12" height="20" fill="#D4AF37" opacity="0.8"/>
+      <rect x="-8" y="13" width="16" height="8" fill="#D4AF37" opacity="0.7"/>
+    </g>
+    
+    <!-- Children -->
+    <g transform="translate(-10, 15)">
+      <!-- Child 1 -->
+      <circle cx="0" cy="-10" r="6" fill="#D4AF37" opacity="0.8"/>
+      <rect x="-4" y="-4" width="8" height="12" fill="#D4AF37" opacity="0.7"/>
+      <rect x="-6" y="8" width="12" height="6" fill="#D4AF37" opacity="0.6"/>
+    </g>
+    
+    <g transform="translate(10, 15)">
+      <!-- Child 2 -->
+      <circle cx="0" cy="-10" r="6" fill="#D4AF37" opacity="0.8"/>
+      <rect x="-4" y="-4" width="8" height="12" fill="#D4AF37" opacity="0.7"/>
+      <rect x="-6" y="8" width="12" height="6" fill="#D4AF37" opacity="0.6"/>
+    </g>
+    
+    <!-- Heart symbol -->
+    <g transform="translate(0, -30)">
+      <path d="M0 5 C-8 -5, -15 -5, -15 5 C-15 15, 0 25, 0 25 C0 25, 15 15, 15 5 C15 -5, 8 -5, 0 5 Z" fill="#D4AF37" opacity="0.6"/>
+    </g>
+    
+    <!-- Legal documents -->
+    <g transform="translate(-50, 20)">
+      <rect x="0" y="0" width="8" height="12" fill="#D4AF37" opacity="0.7"/>
+      <rect x="1" y="1" width="6" height="1" fill="#1F2937"/>
+      <rect x="1" y="3" width="4" height="1" fill="#1F2937"/>
+      <rect x="1" y="5" width="6" height="1" fill="#1F2937"/>
+    </g>
+    
+    <g transform="translate(45, 20)">
+      <rect x="0" y="0" width="8" height="12" fill="#D4AF37" opacity="0.7"/>
+      <rect x="1" y="1" width="6" height="1" fill="#1F2937"/>
+      <rect x="1" y="3" width="4" height="1" fill="#1F2937"/>
+      <rect x="1" y="5" width="6" height="1" fill="#1F2937"/>
+    </g>
+  </g>
+</svg>

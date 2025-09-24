@@ -1,0 +1,79 @@
+<svg width="360" height="216" viewBox="0 0 360 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2937"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0.3"/>
+      <stop offset="70%" style="stop-color:#D4AF37;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="360" height="216" fill="url(#bg)" rx="12"/>
+  
+  <!-- Glow effect -->
+  <rect width="360" height="216" fill="url(#glow)" rx="12"/>
+  
+  <!-- Bank Building -->
+  <g transform="translate(180, 108)">
+    <!-- Main bank structure -->
+    <rect x="-25" y="-35" width="50" height="70" fill="#D4AF37" opacity="0.9"/>
+    
+    <!-- Bank columns -->
+    <rect x="-20" y="-35" width="4" height="70" fill="#1F2937" opacity="0.8"/>
+    <rect x="-10" y="-35" width="4" height="70" fill="#1F2937" opacity="0.8"/>
+    <rect x="6" y="-35" width="4" height="70" fill="#1F2937" opacity="0.8"/>
+    <rect x="16" y="-35" width="4" height="70" fill="#1F2937" opacity="0.8"/>
+    
+    <!-- Bank entrance -->
+    <rect x="-8" y="20" width="16" height="15" fill="#1F2937"/>
+    
+    <!-- Bank sign -->
+    <rect x="-15" y="-40" width="30" height="8" fill="#D4AF37" opacity="0.8"/>
+    <text x="0" y="-35" text-anchor="middle" font-size="4" fill="#1F2937">BANK</text>
+    
+    <!-- Money/Coins -->
+    <g transform="translate(-40, -20)">
+      <circle cx="0" cy="0" r="6" fill="#D4AF37" opacity="0.8"/>
+      <text x="0" y="2" text-anchor="middle" font-size="4" fill="#1F2937">₹</text>
+    </g>
+    
+    <g transform="translate(35, -20)">
+      <circle cx="0" cy="0" r="6" fill="#D4AF37" opacity="0.8"/>
+      <text x="0" y="2" text-anchor="middle" font-size="4" fill="#1F2937">₹</text>
+    </g>
+    
+    <!-- Legal documents -->
+    <g transform="translate(-50, 20)">
+      <rect x="0" y="0" width="12" height="16" fill="#D4AF37" opacity="0.7"/>
+      <rect x="1" y="1" width="10" height="1" fill="#1F2937"/>
+      <rect x="1" y="3" width="8" height="1" fill="#1F2937"/>
+      <rect x="1" y="5" width="10" height="1" fill="#1F2937"/>
+      <rect x="1" y="7" width="6" height="1" fill="#1F2937"/>
+    </g>
+    
+    <g transform="translate(40, 20)">
+      <rect x="0" y="0" width="12" height="16" fill="#D4AF37" opacity="0.7"/>
+      <rect x="1" y="1" width="10" height="1" fill="#1F2937"/>
+      <rect x="1" y="3" width="8" height="1" fill="#1F2937"/>
+      <rect x="1" y="5" width="10" height="1" fill="#1F2937"/>
+      <rect x="1" y="7" width="6" height="1" fill="#1F2937"/>
+    </g>
+    
+    <!-- Security elements -->
+    <g transform="translate(0, -25)">
+      <circle cx="0" cy="0" r="8" fill="#D4AF37" opacity="0.6"/>
+      <path d="M-4 0 L-2 2 L4 -2" stroke="#1F2937" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+    <!-- Vault -->
+    <g transform="translate(0, 30)">
+      <rect x="-8" y="0" width="16" height="12" fill="#1F2937" opacity="0.8"/>
+      <circle cx="0" cy="6" r="3" fill="#D4AF37" opacity="0.7"/>
+      <rect x="-1" y="5" width="2" height="2" fill="#1F2937"/>
+    </g>
+  </g>
+</svg>

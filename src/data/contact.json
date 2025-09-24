@@ -1,0 +1,24 @@
+{
+  "firmName": "LNN Legal",
+  "address": {
+    "street": "53/1, Divya Maple, 2nd Floor",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "zip": "560055",
+    "fullAddress": "53/1, Divya Maple, 2nd Floor, 16th Cross, 8th Main Road, Malleshwaram, Bengaluru, Karnataka 560055"
+  },
+  "phone": "+91 9033286123",
+  "email": "nandeesh@lnnlegal.in",
+  "hours": {
+    "weekdays": "9:00 AM - 6:00 PM",
+    "saturday": "10:00 AM - 2:00 PM",
+    "sunday": "Closed"
+  },
+  "socialMedia": {
+    "linkedin": "https://linkedin.com/company/lnnlegal",
+    "twitter": "https://twitter.com/lnnlegal"
+  }
+}
+
+
+

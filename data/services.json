@@ -1,0 +1,51 @@
+[
+  {
+    "id": "civil-commercial-litigation",
+    "title": "Civil & Commercial Litigation",
+    "blurb": "Comprehensive representation in complex civil disputes and commercial litigation matters.",
+    "description": "We handle a wide range of civil and commercial litigation cases, from contract disputes to complex business litigation. Our experienced attorneys provide strategic counsel and aggressive representation to protect your interests."
+  },
+  {
+    "id": "corporate-law",
+    "title": "Corporate Law",
+    "blurb": "Business formation, governance, and transactional support for companies of all sizes.",
+    "description": "From startup formation to complex mergers and acquisitions, we provide comprehensive corporate legal services including entity formation, governance, compliance, and strategic business transactions."
+  },
+  {
+    "id": "real-estate",
+    "title": "Real Estate Law",
+    "blurb": "Property transactions, development, and real estate dispute resolution.",
+    "description": "Our real estate practice covers residential and commercial transactions, development projects, zoning issues, and real estate litigation. We help clients navigate complex property matters with confidence."
+  },
+  {
+    "id": "intellectual-property",
+    "title": "Intellectual Property",
+    "blurb": "Patent, trademark, copyright, and trade secret protection and enforcement.",
+    "description": "We protect and enforce intellectual property rights through patents, trademarks, copyrights, and trade secret litigation. Our IP attorneys help businesses safeguard their most valuable assets."
+  },
+  {
+    "id": "employment-law",
+    "title": "Employment Law",
+    "blurb": "Workplace compliance, disputes, and employment policy development.",
+    "description": "Comprehensive employment law services including policy development, compliance training, dispute resolution, and representation in employment litigation matters."
+  },
+  {
+    "id": "family-law",
+    "title": "Family Law",
+    "blurb": "Divorce, custody, and family legal matters with compassionate representation.",
+    "description": "Sensitive family law matters including divorce, child custody, adoption, and domestic relations. We provide compassionate yet effective representation during difficult times."
+  },
+  {
+    "id": "estate-planning",
+    "title": "Estate Planning",
+    "blurb": "Wills, trusts, and comprehensive estate planning strategies.",
+    "description": "Complete estate planning services including wills, trusts, powers of attorney, and tax planning strategies to protect your family's future and minimize estate taxes."
+  },
+  {
+    "id": "criminal-defense",
+    "title": "Criminal Defense",
+    "blurb": "Aggressive defense representation for criminal charges and investigations.",
+    "description": "Experienced criminal defense attorneys providing aggressive representation for misdemeanor and felony charges, investigations, and appeals."
+  }
+]
+

@@ -1,0 +1,61 @@
+<svg width="360" height="216" viewBox="0 0 360 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2937"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0.3"/>
+      <stop offset="70%" style="stop-color:#D4AF37;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="360" height="216" fill="url(#bg)" rx="12"/>
+  
+  <!-- Glow effect -->
+  <rect width="360" height="216" fill="url(#glow)" rx="12"/>
+  
+  <!-- Scales of Justice -->
+  <g transform="translate(180, 108)">
+    <!-- Base -->
+    <rect x="-4" y="60" width="8" height="40" fill="#D4AF37"/>
+    <rect x="-20" y="100" width="40" height="8" fill="#D4AF37"/>
+    
+    <!-- Central pillar -->
+    <rect x="-2" y="20" width="4" height="40" fill="#D4AF37"/>
+    
+    <!-- Cross beam -->
+    <rect x="-30" y="20" width="60" height="4" fill="#D4AF37"/>
+    
+    <!-- Left scale -->
+    <g transform="translate(-20, 20)">
+      <path d="M-15 0 L-5 0 L-5 20 L-15 20 Z" fill="#D4AF37" opacity="0.8"/>
+      <circle cx="-10" cy="25" r="8" fill="#D4AF37" opacity="0.6"/>
+      <line x1="-10" y1="25" x2="-10" y2="35" stroke="#D4AF37" stroke-width="2"/>
+    </g>
+    
+    <!-- Right scale -->
+    <g transform="translate(20, 20)">
+      <path d="M5 0 L15 0 L15 20 L5 20 Z" fill="#D4AF37" opacity="0.8"/>
+      <circle cx="10" cy="25" r="8" fill="#D4AF37" opacity="0.6"/>
+      <line x1="10" y1="25" x2="10" y2="35" stroke="#D4AF37" stroke-width="2"/>
+    </g>
+    
+    <!-- Legal documents -->
+    <g transform="translate(-40, 40)">
+      <rect x="0" y="0" width="12" height="16" fill="#D4AF37" opacity="0.7"/>
+      <rect x="2" y="2" width="8" height="1" fill="#1F2937"/>
+      <rect x="2" y="4" width="6" height="1" fill="#1F2937"/>
+      <rect x="2" y="6" width="8" height="1" fill="#1F2937"/>
+    </g>
+    
+    <g transform="translate(30, 40)">
+      <rect x="0" y="0" width="12" height="16" fill="#D4AF37" opacity="0.7"/>
+      <rect x="2" y="2" width="8" height="1" fill="#1F2937"/>
+      <rect x="2" y="4" width="6" height="1" fill="#1F2937"/>
+      <rect x="2" y="6" width="8" height="1" fill="#1F2937"/>
+    </g>
+  </g>
+</svg>

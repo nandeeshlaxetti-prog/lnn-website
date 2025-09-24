@@ -1,0 +1,182 @@
+"use client"
+
+import React from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+const PAL = { gold: "#D4AF37" };
+
+const SketchPaper = (p: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" {...p}>
+    <path d="M7 3h7l5 5v13H7z"/>
+    <path d="M14 3v5h5"/>
+    <path d="M10 12h6M10 16h6M10 8h2"/>
+  </svg>
+);
+
+export default function ContractsPage() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
+      {/* Header */}
+      <header className="relative py-16">
+        <div className="mx-auto max-w-4xl px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl border border-gray-300 text-gray-900 mb-6" style={{ boxShadow: `0 0 0 1px rgba(212,175,55,.35), 0 8px 20px rgba(212,175,55,.15)` }}>
+              <SketchPaper width={32} height={32} />
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">Contracts & Commercial Drafting</h1>
+            <p className="text-xl text-gray-600 mb-8">Precise documents that protect value</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/services" className="rounded-lg border border-gray-300 text-gray-700 px-6 py-2 hover:bg-gray-50">← Back to Services</Link>
+              <Link href="/contact" className="rounded-lg bg-black text-white px-6 py-2 hover:bg-gray-900">Consult Now</Link>
+            </div>
+          </motion.div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <section className="mx-auto max-w-4xl px-6 pb-20">
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Left Column */}
+          <div className="space-y-8">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur p-6"
+            >
+              <h2 className="text-xl font-semibold mb-4">Practice Scope</h2>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#D4AF37] mt-2 flex-shrink-0"></div>
+                  <span>MSA/SOW, NDAs, employment & advisory</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#D4AF37] mt-2 flex-shrink-0"></div>
+                  <span>Supply, distribution, franchise</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#D4AF37] mt-2 flex-shrink-0"></div>
+                  <span>Licensing, IP assignments, SaaS/tech</span>
+                </li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur p-6"
+            >
+              <h2 className="text-xl font-semibold mb-4">Our Approach</h2>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#D4AF37] mt-2 flex-shrink-0"></div>
+                  <span>Drafting & negotiation</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#D4AF37] mt-2 flex-shrink-0"></div>
+                  <span>Risk allocation & boilerplate hygiene</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#D4AF37] mt-2 flex-shrink-0"></div>
+                  <span>Contract lifecycle templates</span>
+                </li>
+              </ul>
+            </motion.div>
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-8">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur p-6"
+            >
+              <h2 className="text-xl font-semibold mb-4">Key Deliverables</h2>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#D4AF37] mt-2 flex-shrink-0"></div>
+                  <span>Master templates</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#D4AF37] mt-2 flex-shrink-0"></div>
+                  <span>Rider/Annexures</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#D4AF37] mt-2 flex-shrink-0"></div>
+                  <span>Negotiation memo</span>
+                </li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur p-6"
+            >
+              <h2 className="text-xl font-semibold mb-4">Why Choose Us</h2>
+              <div className="space-y-4 text-gray-700">
+                <p>Our contract drafting practice focuses on creating documents that are both legally robust and commercially practical.</p>
+                <p>We understand that good contracts prevent disputes rather than just resolving them, and we draft with that principle in mind.</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Contract Types */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="mt-16 rounded-2xl border border-gray-200 bg-white/70 backdrop-blur p-8"
+        >
+          <h2 className="text-2xl font-semibold mb-8 text-center">Contract Types We Handle</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full bg-[#D4AF37] text-white flex items-center justify-center font-bold text-lg mx-auto mb-4">📄</div>
+              <h3 className="font-semibold mb-2">Commercial Agreements</h3>
+              <p className="text-sm text-gray-600">MSAs, SOWs, NDAs, and service agreements</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full bg-[#D4AF37] text-white flex items-center justify-center font-bold text-lg mx-auto mb-4">🏢</div>
+              <h3 className="font-semibold mb-2">Employment Contracts</h3>
+              <p className="text-sm text-gray-600">Employment agreements, consultancy, and advisory contracts</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-full bg-[#D4AF37] text-white flex items-center justify-center font-bold text-lg mx-auto mb-4">💻</div>
+              <h3 className="font-semibold mb-2">Technology Contracts</h3>
+              <p className="text-sm text-gray-600">SaaS, licensing, IP assignments, and tech partnerships</p>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-200 bg-white">
+        <div className="mx-auto max-w-4xl px-6 py-10 text-sm text-gray-600">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2025 LNN Legal. All rights reserved.</p>
+            <div className="flex gap-4">
+              <Link href="/services" className="hover:text-[#D4AF37]">All Services</Link>
+              <Link href="/contact" className="hover:text-[#D4AF37]">Contact Us</Link>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  );
+}
+
+
+
+
+
+

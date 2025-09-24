@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Gokul Rajendran",
+    "role": "Associate",
+    "email": "gokul.rajendran@lnnlegal.com",
+    "bio": "Focused on NCLT/NCLAT, High Court, and Economic Offences Court matters. Specialises in IBC insolvency, oppression & mismanagement, company law, and indirect tax/GST (including RoC/RD compounding and adjudication). Handles start-up incorporations, ongoing compliance, litigation, and closures.",
+    "practiceAreas": ["NCLT/NCLAT", "High Court Matters", "Economic Offences Court", "IBC Insolvency", "Oppression & Mismanagement", "Company Law", "Indirect Tax/GST", "RoC/RD Compounding", "Start-up Incorporations", "Compliance", "Litigation"],
+    "education": "LL.B.",
+    "barAdmissions": ["India"],
+    "photo": "/images/team/gokul-rajendran.jpg"
+  },
+  {
+    "name": "Srinidhi P. S.",
+    "role": "Associate",
+    "email": "srinidhi.ps@lnnlegal.com",
+    "bio": "Specializes in land transactions, legal due diligence, and dispute resolution. Advises on commercial disputes, contract negotiations, and compliance, drafting and reviewing key agreements while representing clients before courts with a practical, client-focused emphasis.",
+    "practiceAreas": ["Land Transactions", "Legal Due Diligence", "Dispute Resolution", "Commercial Disputes", "Contract Negotiations", "Compliance"],
+    "education": "LL.B.",
+    "barAdmissions": ["India"],
+    "photo": "/images/team/srinidhi-ps.jpg"
+  },
+  {
+    "name": "Nikhil Patil",
+    "role": "Associate",
+    "email": "nikhil.patil@lnnlegal.com",
+    "bio": "Associate with practice spanning civil and criminal litigation, due diligence, registrations, and regulatory compliance. Represents clients before courts and tribunals across Karnataka, combining clear communication with pragmatic, solutions-oriented strategies in mediation, negotiation, and litigation.",
+    "practiceAreas": ["Civil Litigation", "Criminal Litigation", "Due Diligence", "Registrations", "Regulatory Compliance", "Mediation", "Negotiation", "Court Representation"],
+    "education": "LL.B.",
+    "barAdmissions": ["India"],
+    "photo": "/images/team/nikhil-patil.jpg.png"
+  }
+]

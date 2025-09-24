@@ -1,0 +1,50 @@
+<svg width="360" height="216" viewBox="0 0 360 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2937"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0.3"/>
+      <stop offset="70%" style="stop-color:#D4AF37;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="360" height="216" fill="url(#bg)" rx="12"/>
+  
+  <!-- Glow effect -->
+  <rect width="360" height="216" fill="url(#glow)" rx="12"/>
+  
+  <!-- Shield -->
+  <g transform="translate(180, 108)">
+    <!-- Main shield -->
+    <path d="M0 -40 L-25 -20 L-25 20 L0 40 L25 20 L25 -20 Z" fill="#D4AF37" opacity="0.9"/>
+    
+    <!-- Shield border -->
+    <path d="M0 -40 L-25 -20 L-25 20 L0 40 L25 20 L25 -20 Z" stroke="#D4AF37" stroke-width="2" fill="none"/>
+    
+    <!-- Inner shield design -->
+    <path d="M0 -30 L-15 -15 L-15 15 L0 30 L15 15 L15 -15 Z" fill="#1F2937" opacity="0.8"/>
+    
+    <!-- Protection symbol -->
+    <circle cx="0" cy="0" r="8" fill="#D4AF37"/>
+    <path d="M-4 0 L-2 2 L4 -2" stroke="#1F2937" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Security elements -->
+    <g transform="translate(-40, -20)">
+      <rect x="0" y="0" width="8" height="12" fill="#D4AF37" opacity="0.6"/>
+      <rect x="2" y="2" width="4" height="1" fill="#1F2937"/>
+      <rect x="2" y="4" width="4" height="1" fill="#1F2937"/>
+      <rect x="2" y="6" width="4" height="1" fill="#1F2937"/>
+    </g>
+    
+    <g transform="translate(35, -20)">
+      <rect x="0" y="0" width="8" height="12" fill="#D4AF37" opacity="0.6"/>
+      <rect x="2" y="2" width="4" height="1" fill="#1F2937"/>
+      <rect x="2" y="4" width="4" height="1" fill="#1F2937"/>
+      <rect x="2" y="6" width="4" height="1" fill="#1F2937"/>
+    </g>
+  </g>
+</svg>
