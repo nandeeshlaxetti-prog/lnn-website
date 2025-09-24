@@ -23,21 +23,54 @@ export const metadata: Metadata = {
     template: '%s | LNN Legal',
   },
   description:
-    'Full-service law firm in Bengaluru: litigation, advisory, real estate, family, IP, consumer, banking, and more.',
+    'LNN Legal - Leading law firm in Bengaluru specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, and consumer protection. Expert legal counsel for individuals and businesses.',
+  keywords: [
+    'lawyer bangalore',
+    'advocate bangalore', 
+    'legal services bangalore',
+    'civil litigation',
+    'criminal defense',
+    'real estate lawyer',
+    'family law attorney',
+    'corporate lawyer',
+    'consumer protection',
+    'LNN Legal',
+    'Laxetti Navadagi Nair'
+  ],
   alternates: { canonical: 'https://lnnlegal.in' },
   openGraph: {
-    title: 'LNN Legal – Advocates & Solicitors',
+    title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
     description:
-      'Civil & Commercial Litigation • Criminal Defence • Real Estate • Family Law • Corporate Advisory • Contracts • Consumer • Banking/SARFAESI',
+      'Leading law firm in Bengaluru: Civil & Commercial Litigation • Criminal Defence • Real Estate • Family Law • Corporate Advisory • Consumer Protection',
     url: 'https://lnnlegal.in',
     siteName: 'LNN Legal',
     type: 'website',
     locale: 'en_IN',
+    images: [
+      {
+        url: 'https://lnnlegal.in/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'LNN Legal - Advocates & Solicitors',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LNN Legal – Advocates & Solicitors',
-    description: 'Future-ready counsel across disputes & transactions.',
+    title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
+    description: 'Expert legal counsel for individuals and businesses in Bengaluru.',
+    images: ['https://lnnlegal.in/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
