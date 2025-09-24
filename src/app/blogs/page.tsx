@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 // Blog data
-const blogPosts = [
+export const blogPosts = [
   {
     id: 1,
     title: "How to File a Civil Case in Karnataka: Step-by-Step Guide",
