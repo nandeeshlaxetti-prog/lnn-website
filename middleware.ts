@@ -3,23 +3,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(req: NextRequest) {
-  const publicPaths = ['/', '/services', '/contact', '/blog', '/about', '/team', '/api/public'];
-  const { pathname } = req.nextUrl;
-
-  // allow all public paths
-  if (publicPaths.some(p => pathname === p || pathname.startsWith(p + '/'))) {
-    return NextResponse.next();
-  }
-
-  // example auth check (pseudo)
-  const isAuthed = req.cookies.get('session')?.value;
-  if (!isAuthed) {
-    const url = req.nextUrl.clone();
-    url.pathname = '/login';
-    url.searchParams.set('next', pathname);
-    return NextResponse.redirect(url);
-  }
-
+  // Allow all routes for now - remove authentication for public pages
   return NextResponse.next();
 }
 

@@ -752,7 +752,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               '--tw-prose-pre-bg': '#1f2937',
               '--tw-prose-th-borders': '#374151',
               '--tw-prose-td-borders': '#374151'
-            }}
+            } as React.CSSProperties}
           >
             <div 
               className="space-y-8"
