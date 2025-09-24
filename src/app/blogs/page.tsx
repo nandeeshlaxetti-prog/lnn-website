@@ -7,46 +7,6 @@ import { useState } from "react";
 // Blog data
 export const blogPosts = [
   {
-    id: 1,
-    title: "How to File a Civil Case in Karnataka: Step-by-Step Guide",
-    excerpt: "Learn how to file a civil suit in Karnataka, India. Step-by-step guidance on preparing a plaint, court jurisdiction, required documents, and legal procedures – explained by Bengaluru civil litigation lawyers.",
-    content: `
-      <h2>Introduction</h2>
-      <p>Filing a civil case in Karnataka involves a structured legal process governed by the Code of Civil Procedure, 1908. Whether you're a business facing a contract dispute or an individual with a property or family matter, understanding how to initiate a civil suit can empower you to seek justice.</p>
-      
-      <h2>Understanding Civil Suits in India</h2>
-      <p>A civil suit is a legal proceeding between private parties to resolve non-criminal disputes. Common types of civil cases include contract disputes, property disputes, family law matters, and tort claims.</p>
-      
-      <h2>Step 1: Pre-Filing Preparations</h2>
-      <h3>Assess Your Claim</h3>
-      <p>Ensure you have a valid cause of action. Verify that your grievance has legal grounds and gather all relevant evidence that supports your claim.</p>
-      
-      <h3>Consult a Lawyer</h3>
-      <p>While not mandatory, consulting an experienced civil litigation lawyer in Bengaluru can greatly help. A lawyer will confirm the maintainability of your suit and help draft legal documents correctly.</p>
-      
-      <h2>Step 2: Drafting the Plaint</h2>
-      <p>The plaint is the written complaint you file to start a civil suit. It should clearly state parties' details, jurisdiction, facts of the case, cause of action, and relief sought.</p>
-      
-      <h2>Step 3: Filing the Suit</h2>
-      <p>Once the plaint is ready, you will file it in the appropriate court registry with the required court fee and supporting documents.</p>
-      
-      <h2>Step 4: Court Issues Summons</h2>
-      <p>The court will issue summons to the defendant(s), who must appear and file a written statement within the specified time.</p>
-      
-      <h2>Step 5: Trial and Evidence</h2>
-      <p>The case moves to trial where both parties present evidence, witnesses are examined, and final arguments are made.</p>
-      
-      <h2>Step 6: Judgment and Decree</h2>
-      <p>The court delivers judgment and issues a decree. If you win, you may need to file an execution petition to enforce the judgment.</p>
-    `,
-    author: "LNN Legal Team",
-    date: "2024-01-20",
-    readTime: "12 min read",
-    category: "Civil Law",
-    tags: ["Civil Litigation", "Karnataka Courts", "Legal Procedure"],
-    featured: true
-  },
-  {
     id: 7,
     title: "SARFAESI Act Explained: What Borrowers and Lenders Need to Know",
     excerpt: "Understand the SARFAESI Act, 2002 — how banks recover loans, rights of borrowers, and remedies before the DRT and courts. A clear guide for homebuyers, businesses, and guarantors in Bengaluru and across India.",
@@ -512,7 +472,7 @@ export default function BlogsPage() {
     return matchesCategory && matchesSearch;
   });
 
-  const featuredPost = blogPosts.find(post => post.featured);
+  const featuredPost = blogPosts.find(post => post.featured) || blogPosts[0];
   const regularPosts = filteredPosts.filter(post => !post.featured);
 
   return (
