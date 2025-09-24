@@ -1,14 +1,24 @@
 import type { MetadataRoute } from 'next';
+import { blogPosts } from './blogs/page';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://lnnlegal.in';
-  const pages = [
-    '', 'about', 'services', 'blog', 'contact'
+  
+  // Main pages
+  const mainPages = [
+    '', 'about', 'services', 'team', 'blogs', 'contact'
   ];
-  return pages.map((p) => ({
-    url: `${base}/${p}`,
+  
+  // Blog pages
+  const blogPages = blogPosts.map(post => `/blogs/${post.id}`);
+  
+  // Combine all pages
+  const allPages = [...mainPages, ...blogPages];
+  
+  return allPages.map((page) => ({
+    url: `${base}${page}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: p === '' ? 1.0 : 0.7,
+    changeFrequency: page.startsWith('/blogs/') ? 'monthly' : 'weekly',
+    priority: page === '' ? 1.0 : page.startsWith('/blogs/') ? 0.6 : 0.8,
   }));
 }
