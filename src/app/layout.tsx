@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: '%s | LNN Legal',
   },
   description:
-    'LNN Legal - Leading law firm in Bengaluru specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, and consumer protection. Expert legal counsel for individuals and businesses.',
+    'LNN Legal - Premier law firm in Bengaluru, Karnataka. Expert advocates specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Professional legal services for individuals and businesses.',
   keywords: [
     'lawyer bangalore',
     'advocate bangalore', 
@@ -107,6 +107,57 @@ export default function RootLayout({
         <Script id="gsc" strategy="afterInteractive">
           {/* Add your GSC verification token here */}
         </Script>
+        
+        {/* Structured Data for Law Firm */}
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LegalService",
+              "name": "LNN Legal",
+              "alternateName": "Laxetti Navadagi & Nair",
+              "description": "Premier law firm in Bengaluru, Karnataka specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.",
+              "url": "https://lnnlegal.in",
+              "logo": "https://lnnlegal.in/logo.png",
+              "image": "https://lnnlegal.in/og-image.jpg",
+              "telephone": "+91-80-1234-5678",
+              "email": "info@lnnlegal.in",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Legal Street",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "Karnataka",
+                "postalCode": "560001",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "12.9716",
+                "longitude": "77.5946"
+              },
+              "areaServed": {
+                "@type": "City",
+                "name": "Bengaluru"
+              },
+              "serviceType": [
+                "Civil Litigation",
+                "Criminal Defense",
+                "Real Estate Law",
+                "Family Law",
+                "Corporate Advisory",
+                "Consumer Protection",
+                "Banking Law"
+              ],
+              "priceRange": "$$",
+              "openingHours": "Mo-Fr 09:00-18:00",
+              "sameAs": [
+                "https://www.linkedin.com/company/lnn-legal"
+              ]
+            })
+          }}
+        />
       </body>
     </html>
   );
