@@ -7,8 +7,21 @@ import { notFound } from "next/navigation";
 // Import the blog data from the main blogs page
 import { blogPosts } from '../page';
 
-export default function BlogDetailPage({ params }: { params: { id: string } }) {
-  const postId = parseInt(params.id);
+export default async function BlogDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  
+  // Ensure params.id exists and is a valid string
+  if (!resolvedParams?.id || typeof resolvedParams.id !== 'string') {
+    notFound();
+  }
+  
+  const postId = parseInt(resolvedParams.id);
+  
+  // Check if the parsed ID is valid
+  if (isNaN(postId)) {
+    notFound();
+  }
+  
   const post = blogPosts.find(p => p.id === postId);
 
   if (!post) {
