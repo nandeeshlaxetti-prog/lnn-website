@@ -1,6 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About LNN Legal - Expert Advocates & Solicitors in Bengaluru",
+  description: "Learn about LNN Legal, a premier law firm in Bengaluru led by experienced advocates Nandeesh Laxetti and Sangamesh Navadagi. Specializing in civil litigation, criminal defense, and comprehensive legal services across Karnataka.",
+  keywords: [
+    "about LNN Legal",
+    "law firm history bangalore",
+    "advocates bangalore",
+    "legal team bangalore",
+    "Nandeesh Laxetti",
+    "Sangamesh Navadagi",
+    "law firm story bangalore",
+    "experienced lawyers bangalore"
+  ],
+  openGraph: {
+    title: "About LNN Legal - Expert Advocates & Solicitors in Bengaluru",
+    description: "Learn about LNN Legal, a premier law firm in Bengaluru led by experienced advocates. Specializing in comprehensive legal services across Karnataka.",
+    url: "https://lnnlegal.in/about",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://lnnlegal.in/about",
+  },
+};
 
 export default function AboutPage() {
   return (

@@ -2,6 +2,35 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Legal Services - Civil Litigation, Criminal Defense & More | LNN Legal",
+  description: "Comprehensive legal services in Bengaluru including civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Expert advocates at LNN Legal.",
+  keywords: [
+    "legal services bangalore",
+    "civil litigation bangalore",
+    "criminal defense bangalore",
+    "real estate lawyer bangalore",
+    "family law attorney bangalore",
+    "corporate lawyer bangalore",
+    "consumer protection bangalore",
+    "banking law bangalore",
+    "contract drafting bangalore",
+    "legal consultation bangalore",
+    "court representation bangalore",
+    "advocate services bangalore"
+  ],
+  openGraph: {
+    title: "Legal Services - Civil Litigation, Criminal Defense & More | LNN Legal",
+    description: "Comprehensive legal services in Bengaluru including civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.",
+    url: "https://lnnlegal.in/services",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://lnnlegal.in/services",
+  },
+};
 
 // Futuristic Services Page for LNN Legal
 // TailwindCSS + Framer Motion animations
