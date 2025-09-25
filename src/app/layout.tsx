@@ -106,6 +106,12 @@ export const metadata: Metadata = {
     'Sangamesh Navadagi'
   ],
   alternates: { canonical: 'https://lnnlegal.in' },
+  verification: {
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE', // Replace with actual GSC verification code
+    // Add other verification codes as needed:
+    // bing: 'YOUR_BING_VERIFICATION_CODE',
+    // yandex: 'YOUR_YANDEX_VERIFICATION_CODE',
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
