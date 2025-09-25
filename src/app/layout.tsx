@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     template: '%s | LNN Legal',
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/images/logo/lnn-legal-logo.png',
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
   verification: {
     google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE',
@@ -95,10 +95,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/images/logo/lnn-legal-logo.png" type="image/png" sizes="32x32" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/images/logo/lnn-legal-logo.png" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <meta property="og:image" content="https://lnnlegal.in/images/logo/lnn-legal-logo.png" />
         <meta name="twitter:image" content="https://lnnlegal.in/images/logo/lnn-legal-logo.png" />
         <meta name="logo" content="https://lnnlegal.in/images/logo/lnn-legal-logo.png" />
