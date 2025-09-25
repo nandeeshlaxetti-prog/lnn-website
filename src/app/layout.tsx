@@ -5,7 +5,6 @@ import "./globals.css";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import DisclaimerModal from "@/components/ui/DisclaimerModal";
-import GoogleAnalyticsVerification from "@/components/ui/GoogleAnalyticsVerification";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -246,9 +245,6 @@ export default function RootLayout({
         
         {/* Disclaimer Modal */}
         <DisclaimerModal />
-        
-        {/* Google Analytics Verification - Temporary */}
-        <GoogleAnalyticsVerification />
         
         {/* Google Analytics */}
         <Script

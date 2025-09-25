@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { use } from "react";
 
 // Import the blog data from the main blogs page
 import { blogPosts } from '../page';
 
-export default async function BlogDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = await params;
+export default function BlogDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = use(params);
   
   // Ensure params.id exists and is a valid string
   if (!resolvedParams?.id || typeof resolvedParams.id !== 'string') {
