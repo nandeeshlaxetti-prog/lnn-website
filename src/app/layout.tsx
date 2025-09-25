@@ -53,10 +53,37 @@ export const metadata: Metadata = {
     'litigation lawyer bangalore',
     'property lawyer bangalore',
     'business lawyer bangalore',
+    'advocate near me bangalore',
+    'lawyer near me bangalore',
+    'best advocate bangalore',
+    'top lawyer bangalore',
+    'experienced advocate bangalore',
+    'senior advocate bangalore',
+    'advocate in bangalore',
+    'lawyer in bangalore',
+    'legal services near me',
+    'advocate consultation bangalore',
+    'court lawyer bangalore',
+    'high court advocate bangalore',
+    'district court lawyer bangalore',
+    'civil court advocate bangalore',
+    'criminal court lawyer bangalore',
+    'family court advocate bangalore',
+    'consumer court lawyer bangalore',
+    'banking court advocate bangalore',
+    'malleshwaram lawyer',
+    'malleshwaram advocate',
+    'lawyer in malleshwaram',
+    'advocate in malleshwaram',
+    'legal services malleshwaram',
+    'karnataka legal services',
+    'bangalore legal services',
+    'karnataka advocate',
+    'karnataka lawyer',
     'LNN Legal',
     'Laxetti Navadagi Nair',
-    'Malleshwaram lawyer',
-    'Karnataka legal services'
+    'Nandeesh Laxetti',
+    'Sangamesh Navadagi'
   ],
   alternates: { canonical: 'https://lnnlegal.in' },
   openGraph: {
@@ -115,6 +142,23 @@ export default function RootLayout({
         <meta property="og:image" content="https://lnnlegal.in/images/logo/lnn-legal-logo.png" />
         <meta name="twitter:image" content="https://lnnlegal.in/images/logo/lnn-legal-logo.png" />
         <meta name="logo" content="https://lnnlegal.in/images/logo/lnn-legal-logo.png" />
+        <meta name="geo.region" content="IN-KA" />
+        <meta name="geo.placename" content="Bengaluru" />
+        <meta name="geo.position" content="13.0068714;77.56435359999999" />
+        <meta name="ICBM" content="13.0068714, 77.56435359999999" />
+        <meta name="DC.title" content="LNN Legal - Advocates & Solicitors, Bengaluru" />
+        <meta name="DC.creator" content="LNN Legal" />
+        <meta name="DC.subject" content="Legal Services, Advocates, Lawyers, Bengaluru" />
+        <meta name="DC.description" content="Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law." />
+        <meta name="DC.publisher" content="LNN Legal" />
+        <meta name="DC.contributor" content="Nandeesh Laxetti, Sangamesh Navadagi" />
+        <meta name="DC.date" content="2024-01-01" />
+        <meta name="DC.type" content="Service" />
+        <meta name="DC.format" content="text/html" />
+        <meta name="DC.identifier" content="https://lnnlegal.in" />
+        <meta name="DC.language" content="en-IN" />
+        <meta name="DC.coverage" content="Bengaluru, Karnataka, India" />
+        <meta name="DC.rights" content="Copyright LNN Legal" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -150,7 +194,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": ["LegalService", "Organization", "ProfessionalService"],
+              "@type": ["LegalService", "Organization", "ProfessionalService", "LocalBusiness"],
               "name": "LNN Legal",
               "alternateName": ["LNN Legal Advocates & Solicitors", "Laxetti Navadagi & Nair"],
               "description": "Premier law firm in Bengaluru, Karnataka specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Expert legal counsel for individuals and businesses across Karnataka.",
@@ -177,10 +221,28 @@ export default function RootLayout({
                 "latitude": "13.0068714",
                 "longitude": "77.56435359999999"
               },
-              "areaServed": {
-                "@type": "City",
-                "name": "Bengaluru"
-              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Bengaluru",
+                  "containedInPlace": {
+                    "@type": "State",
+                    "name": "Karnataka"
+                  }
+                },
+                {
+                  "@type": "City", 
+                  "name": "Malleshwaram",
+                  "containedInPlace": {
+                    "@type": "City",
+                    "name": "Bengaluru"
+                  }
+                },
+                {
+                  "@type": "State",
+                  "name": "Karnataka"
+                }
+              ],
               "serviceType": [
                 "Civil Litigation",
                 "Commercial Litigation", 
@@ -205,6 +267,15 @@ export default function RootLayout({
               "priceRange": "$$",
               "openingHours": "Mo-Fr 09:00-18:00",
               "foundingDate": "2020",
+              "currenciesAccepted": "INR",
+              "paymentAccepted": ["Cash", "Cheque", "Bank Transfer", "UPI"],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "25",
+                "bestRating": "5",
+                "worstRating": "1"
+              },
               "founder": [
                 {
                   "@type": "Person",
