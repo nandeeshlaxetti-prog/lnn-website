@@ -23,12 +23,8 @@ export const metadata: Metadata = {
     template: '%s | LNN Legal',
   },
   icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-    ],
-    shortcut: '/favicon.ico',
+    icon: '/images/logo/lnn-legal-logo.png',
+    shortcut: '/images/logo/lnn-legal-logo.png',
     apple: '/images/logo/lnn-legal-logo.png',
   },
   verification: {
