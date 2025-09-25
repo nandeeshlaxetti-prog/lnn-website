@@ -3,35 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Legal Insights & Articles - Expert Legal Guidance | LNN Legal",
-  description: "Read expert legal insights and articles from LNN Legal advocates. Comprehensive guides on civil litigation, criminal defense, real estate law, family law, and legal procedures in Karnataka.",
-  keywords: [
-    "legal articles bangalore",
-    "legal insights bangalore",
-    "legal guidance bangalore",
-    "law blog bangalore",
-    "legal procedures karnataka",
-    "civil litigation guide",
-    "criminal defense guide",
-    "real estate law guide",
-    "family law guide",
-    "legal advice bangalore",
-    "lawyer blog bangalore",
-    "advocate articles bangalore"
-  ],
-  openGraph: {
-    title: "Legal Insights & Articles - Expert Legal Guidance | LNN Legal",
-    description: "Read expert legal insights and articles from LNN Legal advocates. Comprehensive guides on legal procedures and services in Karnataka.",
-    url: "https://lnnlegal.in/blogs",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://lnnlegal.in/blogs",
-  },
-};
 
 // Blog data
 export const blogPosts = [

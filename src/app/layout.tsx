@@ -22,6 +22,23 @@ export const metadata: Metadata = {
     default: 'LNN Legal – Advocates & Solicitors, Bengaluru',
     template: '%s | LNN Legal',
   },
+  // Page-specific titles will override this template
+  openGraph: {
+    title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
+    description: 'LNN Legal - Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.',
+    url: 'https://lnnlegal.in',
+    siteName: 'LNN Legal',
+    type: 'website',
+    locale: 'en_IN',
+    images: [
+      {
+        url: 'https://lnnlegal.in/images/logo/lnn-legal-logo.png',
+        width: 400,
+        height: 200,
+        alt: 'LNN Legal Logo',
+      },
+    ],
+  },
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
@@ -158,7 +175,38 @@ export default function RootLayout({
         <meta name="DC.identifier" content="https://lnnlegal.in" />
         <meta name="DC.language" content="en-IN" />
         <meta name="DC.coverage" content="Bengaluru, Karnataka, India" />
-        <meta name="DC.rights" content="Copyright LNN Legal" />
+                <meta name="DC.rights" content="Copyright LNN Legal" />
+                
+                {/* Additional SEO Meta Tags */}
+                <meta name="format-detection" content="telephone=no" />
+                <meta name="theme-color" content="#D4AF37" />
+                <meta name="msapplication-TileColor" content="#D4AF37" />
+                <meta name="msapplication-config" content="/browserconfig.xml" />
+                
+                {/* Page-specific meta tags */}
+                <meta name="page-type" content="legal-services" />
+                <meta name="audience" content="individuals, businesses, legal professionals" />
+                <meta name="distribution" content="global" />
+                <meta name="rating" content="general" />
+                <meta name="revisit-after" content="7 days" />
+                
+                {/* Enhanced Local SEO */}
+                <meta name="geo.region" content="IN-KA" />
+                <meta name="geo.placename" content="Bengaluru" />
+                <meta name="geo.position" content="13.0068714;77.56435359999999" />
+                <meta name="ICBM" content="13.0068714, 77.56435359999999" />
+                
+                {/* Business Hours */}
+                <meta name="business-hours" content="Monday-Friday 9:00 AM - 6:00 PM" />
+                <meta name="business-days" content="Monday, Tuesday, Wednesday, Thursday, Friday" />
+                
+                {/* Service Areas */}
+                <meta name="service-area" content="Bengaluru, Karnataka, India" />
+                <meta name="service-locations" content="Malleshwaram, Bengaluru" />
+                
+                {/* Legal Practice Areas */}
+                <meta name="practice-areas" content="Civil Litigation, Criminal Defense, Real Estate Law, Family Law, Corporate Advisory, Consumer Protection, Banking Law" />
+                <meta name="specializations" content="SARFAESI Act, Contract Drafting, Court Representation, Legal Consultation" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -4,32 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import teamData from "@/data/team.json";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Our Legal Team - Expert Advocates & Solicitors | LNN Legal",
-  description: "Meet our experienced legal team at LNN Legal. Led by advocates Nandeesh Laxetti and Sangamesh Navadagi, our team provides expert legal counsel in civil litigation, criminal defense, and comprehensive legal services across Bengaluru.",
-  keywords: [
-    "legal team bangalore",
-    "advocates bangalore",
-    "lawyers bangalore",
-    "Nandeesh Laxetti",
-    "Sangamesh Navadagi",
-    "legal professionals bangalore",
-    "experienced lawyers bangalore",
-    "senior advocates bangalore",
-    "legal experts bangalore"
-  ],
-  openGraph: {
-    title: "Our Legal Team - Expert Advocates & Solicitors | LNN Legal",
-    description: "Meet our experienced legal team at LNN Legal. Led by advocates Nandeesh Laxetti and Sangamesh Navadagi, providing expert legal counsel across Bengaluru.",
-    url: "https://lnnlegal.in/team",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://lnnlegal.in/team",
-  },
-};
 
 // Real Partner Data
 const partners = [
