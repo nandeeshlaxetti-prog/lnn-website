@@ -36,13 +36,27 @@ export const metadata: Metadata = {
     'lawyer bangalore',
     'advocate bangalore', 
     'legal services bangalore',
-    'civil litigation',
-    'criminal defense',
-    'real estate lawyer',
-    'family law attorney',
-    'corporate lawyer',
-    'consumer protection',
-    'LNN Legal'
+    'civil litigation bangalore',
+    'criminal defense bangalore',
+    'real estate lawyer bangalore',
+    'family law attorney bangalore',
+    'corporate lawyer bangalore',
+    'consumer protection bangalore',
+    'banking law bangalore',
+    'contract drafting bangalore',
+    'legal consultation bangalore',
+    'court representation bangalore',
+    'legal advice bangalore',
+    'law firm bangalore',
+    'attorney bangalore',
+    'legal counsel bangalore',
+    'litigation lawyer bangalore',
+    'property lawyer bangalore',
+    'business lawyer bangalore',
+    'LNN Legal',
+    'Laxetti Navadagi Nair',
+    'Malleshwaram lawyer',
+    'Karnataka legal services'
   ],
   alternates: { canonical: 'https://lnnlegal.in' },
   openGraph: {
@@ -136,10 +150,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": ["LegalService", "Organization"],
+              "@type": ["LegalService", "Organization", "ProfessionalService"],
               "name": "LNN Legal",
-              "alternateName": "LNN Legal Advocates & Solicitors",
-              "description": "Premier law firm in Bengaluru, Karnataka specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.",
+              "alternateName": ["LNN Legal Advocates & Solicitors", "Laxetti Navadagi & Nair"],
+              "description": "Premier law firm in Bengaluru, Karnataka specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Expert legal counsel for individuals and businesses across Karnataka.",
               "url": "https://lnnlegal.in",
               "logo": {
                 "@type": "ImageObject",
@@ -148,20 +162,20 @@ export default function RootLayout({
                 "height": 200
               },
               "image": "https://lnnlegal.in/og-image.jpg",
-              "telephone": "+91-80-1234-5678",
-              "email": "info@lnnlegal.in",
+              "telephone": ["+91-9033286123", "+91-9731914801", "+91-8746965652"],
+              "email": ["nandeesh@lnnlegal.in", "sangamesh@lnnlegal.in", "akhil@lnnlegal.in"],
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "123 Legal Street",
-                "addressLocality": "Bengaluru",
-                "addressRegion": "Karnataka",
-                "postalCode": "560001",
+                "streetAddress": "53/1, Divya Maple, 2nd Floor, 16th Cross, 8th Main Road",
+                "addressLocality": "Malleshwaram",
+                "addressRegion": "Bengaluru",
+                "postalCode": "560055",
                 "addressCountry": "IN"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "12.9716",
-                "longitude": "77.5946"
+                "latitude": "13.0068714",
+                "longitude": "77.56435359999999"
               },
               "areaServed": {
                 "@type": "City",
@@ -169,15 +183,60 @@ export default function RootLayout({
               },
               "serviceType": [
                 "Civil Litigation",
+                "Commercial Litigation", 
                 "Criminal Defense",
+                "White Collar Crimes",
                 "Real Estate Law",
+                "Property Disputes",
                 "Family Law",
+                "Matrimonial Disputes",
                 "Corporate Advisory",
+                "Contract Drafting",
                 "Consumer Protection",
-                "Banking Law"
+                "Banking Law",
+                "SARFAESI Act",
+                "Insolvency Law",
+                "Labor Law",
+                "Employment Law",
+                "Intellectual Property",
+                "Administrative Law",
+                "Lokayukta Proceedings"
               ],
               "priceRange": "$$",
               "openingHours": "Mo-Fr 09:00-18:00",
+              "foundingDate": "2020",
+              "founder": [
+                {
+                  "@type": "Person",
+                  "name": "Nandeesh Laxetti"
+                },
+                {
+                  "@type": "Person", 
+                  "name": "Sangamesh Navadagi"
+                }
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Legal Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Civil Litigation",
+                      "description": "Representation in civil and commercial courts"
+                    }
+                  },
+                  {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Criminal Defense",
+                      "description": "Robust defense across criminal courts"
+                    }
+                  }
+                ]
+              },
               "sameAs": [
                 "https://www.linkedin.com/company/lnn-legal"
               ]
