@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE',
   },
   description:
-    'Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Trusted advocates for individuals and businesses across Karnataka.',
+    'LNN Legal - Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Trusted advocates for individuals and businesses across Karnataka.',
   keywords: [
     'lawyer bangalore',
     'advocate bangalore', 
@@ -42,14 +42,13 @@ export const metadata: Metadata = {
     'family law attorney',
     'corporate lawyer',
     'consumer protection',
-    'LNN Legal',
     'LNN Legal'
   ],
   alternates: { canonical: 'https://lnnlegal.in' },
   openGraph: {
     title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
     description:
-      'Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.',
+      'LNN Legal - Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.',
     url: 'https://lnnlegal.in',
     siteName: 'LNN Legal',
     type: 'website',
@@ -66,7 +65,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
-    description: 'Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.',
+    description: 'LNN Legal - Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.',
     images: ['https://lnnlegal.in/og-image.jpg'],
   },
   robots: {
