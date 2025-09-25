@@ -56,7 +56,7 @@ const contactMethods = [
     details: ["53/1, Divya Maple, 2nd Floor", "16th Cross, 8th Main Road", "Malleshwaram, Bengaluru"],
     action: "Get Directions",
     actionType: "directions",
-    actionValue: "https://www.google.com/maps/dir/?api=1&destination=13.0068714,77.56435359999999"
+    actionValue: "https://www.google.com/maps/dir/?api=1&destination=2H47%2BPP+Bengaluru%2C+Karnataka"
   }
 ];
 
@@ -395,7 +395,8 @@ export default function ContactPage() {
                         53/1, Divya Maple, 2nd Floor<br />
                         16th Cross, 8th Main Road<br />
                         Malleshwaram, Bengaluru<br />
-                        Karnataka 560055, India
+                        Karnataka 560055, India<br />
+                        <span className="text-[#D4AF37]">Plus Code: 2H47+PP Bengaluru</span>
                       </p>
                     </div>
                   </div>
