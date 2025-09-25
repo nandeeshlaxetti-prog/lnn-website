@@ -55,6 +55,12 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     images: [
       {
+        url: 'https://lnnlegal.in/images/logo/lnn-legal-logo.png',
+        width: 400,
+        height: 200,
+        alt: 'LNN Legal Logo',
+      },
+      {
         url: 'https://lnnlegal.in/og-image.jpg',
         width: 1200,
         height: 630,
@@ -66,7 +72,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
     description: 'LNN Legal - Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.',
-    images: ['https://lnnlegal.in/og-image.jpg'],
+    images: ['https://lnnlegal.in/images/logo/lnn-legal-logo.png', 'https://lnnlegal.in/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -92,6 +98,9 @@ export default function RootLayout({
         <link rel="icon" href="/images/logo/lnn-legal-logo.png" type="image/png" />
         <link rel="shortcut icon" href="/images/logo/lnn-legal-logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/logo/lnn-legal-logo.png" />
+        <meta property="og:image" content="https://lnnlegal.in/images/logo/lnn-legal-logo.png" />
+        <meta name="twitter:image" content="https://lnnlegal.in/images/logo/lnn-legal-logo.png" />
+        <meta name="logo" content="https://lnnlegal.in/images/logo/lnn-legal-logo.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -127,11 +136,17 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LegalService",
+              "@type": ["LegalService", "Organization"],
               "name": "LNN Legal",
+              "alternateName": "LNN Legal Advocates & Solicitors",
               "description": "Premier law firm in Bengaluru, Karnataka specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.",
               "url": "https://lnnlegal.in",
-              "logo": "https://lnnlegal.in/images/logo/lnn-legal-logo.png",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://lnnlegal.in/images/logo/lnn-legal-logo.png",
+                "width": 400,
+                "height": 200
+              },
               "image": "https://lnnlegal.in/og-image.jpg",
               "telephone": "+91-80-1234-5678",
               "email": "info@lnnlegal.in",
