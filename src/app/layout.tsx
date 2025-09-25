@@ -5,6 +5,7 @@ import "./globals.css";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import DisclaimerModal from "@/components/ui/DisclaimerModal";
+import GoogleAnalyticsVerification from "@/components/ui/GoogleAnalyticsVerification";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -210,6 +211,21 @@ export default function RootLayout({
                 {/* Legal Practice Areas */}
                 <meta name="practice-areas" content="Civil Litigation, Criminal Defense, Real Estate Law, Family Law, Corporate Advisory, Consumer Protection, Banking Law" />
                 <meta name="specializations" content="SARFAESI Act, Contract Drafting, Court Representation, Legal Consultation" />
+                
+                {/* Google Analytics - Direct Implementation */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPKESB6MRJ"></script>
+                <script dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-XPKESB6MRJ');
+                    
+                    // Verification for Google Analytics
+                    window.gtag = window.gtag || function(){(window.gtag.q=window.gtag.q||[]).push(arguments);};
+                    console.log('Google Analytics loaded:', window.gtag);
+                  `
+                }} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -222,6 +238,9 @@ export default function RootLayout({
         
         {/* Disclaimer Modal */}
         <DisclaimerModal />
+        
+        {/* Google Analytics Verification - Temporary */}
+        <GoogleAnalyticsVerification />
         
         {/* Google Analytics */}
         <Script
