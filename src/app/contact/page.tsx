@@ -56,7 +56,7 @@ const contactMethods = [
     details: ["53/1, Divya Maple, 2nd Floor", "16th Cross, 8th Main Road", "Malleshwaram, Bengaluru"],
     action: "Get Directions",
     actionType: "directions",
-    actionValue: "https://www.google.com/maps/dir/?api=1&destination=LNN+Legal,+53%2F1+Divya+Maple+2nd+Floor+16th+Cross+8th+Main+Road+Malleshwaram+Bengaluru+Karnataka+560055+India"
+    actionValue: "https://www.google.com/maps/dir/?api=1&destination=13.0068714,77.56435359999999"
   }
 ];
 
@@ -376,8 +376,8 @@ export default function ContactPage() {
               <div className="bg-gray-800 rounded-2xl p-6">
                 <h3 className="text-xl font-semibold text-white mb-4">Visit Our Office</h3>
                 <GoogleMap 
-                  latitude={13.006879893514542}
-                  longitude={77.5643542705331}
+                  latitude={13.0068714}
+                  longitude={77.56435359999999}
                   zoom={16}
                   className="w-full h-64 rounded-xl border border-gray-600"
                 />
