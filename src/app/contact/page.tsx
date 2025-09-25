@@ -36,21 +36,27 @@ const contactMethods = [
     description: "Speak directly with our legal team",
     icon: "📞",
     details: ["+91 9033286123", "+91 9731914801", "+91 8746965652"],
-    action: "Call Now"
+    action: "Call Now",
+    actionType: "phone",
+    actionValue: "+919033286123"
   },
   {
     title: "Email Inquiry",
     description: "Send us detailed information about your case",
     icon: "✉️",
     details: ["nandeesh@lnnlegal.in", "sangamesh@lnnlegal.in", "akhil@lnnlegal.in"],
-    action: "Send Email"
+    action: "Send Email",
+    actionType: "email",
+    actionValue: "nandeesh@lnnlegal.in"
   },
   {
     title: "Office Visit",
     description: "Schedule an in-person consultation",
     icon: "🏢",
     details: ["53/1, Divya Maple, 2nd Floor", "16th Cross, 8th Main Road", "Malleshwaram, Bengaluru"],
-    action: "Get Directions"
+    action: "Get Directions",
+    actionType: "directions",
+    actionValue: "https://www.google.com/maps/dir/?api=1&destination=LNN+Legal,+53%2F1+Divya+Maple+2nd+Floor+16th+Cross+8th+Main+Road+Malleshwaram+Bengaluru+Karnataka+560055+India"
   }
 ];
 
@@ -162,9 +168,34 @@ export default function ContactPage() {
                     <p key={i} className="text-gray-300 text-xs md:text-sm">{detail}</p>
                   ))}
                 </div>
-                <button className="w-full bg-[#D4AF37] text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#D4AF37]/90 transition-colors text-sm md:text-base">
-                  {method.action}
-                </button>
+                {method.actionType === "phone" ? (
+                  <a 
+                    href={`tel:${method.actionValue}`}
+                    className="w-full bg-[#D4AF37] text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#D4AF37]/90 transition-colors text-sm md:text-base block text-center"
+                  >
+                    {method.action}
+                  </a>
+                ) : method.actionType === "email" ? (
+                  <a 
+                    href={`mailto:${method.actionValue}`}
+                    className="w-full bg-[#D4AF37] text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#D4AF37]/90 transition-colors text-sm md:text-base block text-center"
+                  >
+                    {method.action}
+                  </a>
+                ) : method.actionType === "directions" ? (
+                  <a 
+                    href={method.actionValue}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-[#D4AF37] text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#D4AF37]/90 transition-colors text-sm md:text-base block text-center"
+                  >
+                    {method.action}
+                  </a>
+                ) : (
+                  <button className="w-full bg-[#D4AF37] text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#D4AF37]/90 transition-colors text-sm md:text-base">
+                    {method.action}
+                  </button>
+                )}
               </motion.div>
             ))}
           </div>
