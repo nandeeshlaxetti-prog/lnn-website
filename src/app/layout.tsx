@@ -212,24 +212,32 @@ export default function RootLayout({
                 <meta name="practice-areas" content="Civil Litigation, Criminal Defense, Real Estate Law, Family Law, Corporate Advisory, Consumer Protection, Banking Law" />
                 <meta name="specializations" content="SARFAESI Act, Contract Drafting, Court Representation, Legal Consultation" />
                 
-                {/* Google Analytics - Direct Implementation */}
+                {/* Google Analytics - Manual Installation */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPKESB6MRJ"></script>
                 <script dangerouslySetInnerHTML={{
                   __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'G-XPKESB6MRJ');
-                    
-                    // Verification for Google Analytics
-                    window.gtag = window.gtag || function(){(window.gtag.q=window.gtag.q||[]).push(arguments);};
-                    console.log('Google Analytics loaded:', window.gtag);
+                    gtag('config', 'G-XPKESB6MRJ', {
+                      page_title: document.title,
+                      page_location: window.location.href
+                    });
                   `
                 }} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Google Analytics noscript fallback */}
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=G-XPKESB6MRJ"
+            height="0" 
+            width="0" 
+            style={{display:'none',visibility:'hidden'}}
+          />
+        </noscript>
         <Header />
         <main className="pt-16">
           {children}
