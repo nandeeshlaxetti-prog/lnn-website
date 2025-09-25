@@ -106,29 +106,6 @@ export const metadata: Metadata = {
     'Sangamesh Navadagi'
   ],
   alternates: { canonical: 'https://lnnlegal.in' },
-  openGraph: {
-    title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
-    description:
-      'LNN Legal - Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.',
-    url: 'https://lnnlegal.in',
-    siteName: 'LNN Legal',
-    type: 'website',
-    locale: 'en_IN',
-    images: [
-      {
-        url: 'https://lnnlegal.in/images/logo/lnn-legal-logo.png',
-        width: 400,
-        height: 200,
-        alt: 'LNN Legal Logo',
-      },
-      {
-        url: 'https://lnnlegal.in/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'LNN Legal - Advocates & Solicitors',
-      },
-    ],
-  },
   twitter: {
     card: 'summary_large_image',
     title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
