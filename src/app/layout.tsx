@@ -22,8 +22,20 @@ export const metadata: Metadata = {
     default: 'LNN Legal – Advocates & Solicitors, Bengaluru',
     template: '%s | LNN Legal',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/images/logo/lnn-legal-logo.png',
+  },
+  verification: {
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE',
+  },
   description:
-    'LNN Legal - Premier law firm in Bengaluru, Karnataka. Expert advocates specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Professional legal services for individuals and businesses.',
+    'Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Trusted advocates for individuals and businesses across Karnataka.',
   keywords: [
     'lawyer bangalore',
     'advocate bangalore', 
@@ -35,13 +47,13 @@ export const metadata: Metadata = {
     'corporate lawyer',
     'consumer protection',
     'LNN Legal',
-    'Laxetti Navadagi Nair'
+    'LNN Legal'
   ],
   alternates: { canonical: 'https://lnnlegal.in' },
   openGraph: {
     title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
     description:
-      'Leading law firm in Bengaluru: Civil & Commercial Litigation • Criminal Defence • Real Estate • Family Law • Corporate Advisory • Consumer Protection',
+      'Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.',
     url: 'https://lnnlegal.in',
     siteName: 'LNN Legal',
     type: 'website',
@@ -58,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'LNN Legal – Advocates & Solicitors, Bengaluru',
-    description: 'Expert legal counsel for individuals and businesses in Bengaluru.',
+    description: 'Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.',
     images: ['https://lnnlegal.in/og-image.jpg'],
   },
   robots: {
@@ -117,10 +129,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LegalService",
               "name": "LNN Legal",
-              "alternateName": "Laxetti Navadagi & Nair",
               "description": "Premier law firm in Bengaluru, Karnataka specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law.",
               "url": "https://lnnlegal.in",
-              "logo": "https://lnnlegal.in/logo.png",
+              "logo": "https://lnnlegal.in/images/logo/lnn-legal-logo.png",
               "image": "https://lnnlegal.in/og-image.jpg",
               "telephone": "+91-80-1234-5678",
               "email": "info@lnnlegal.in",
