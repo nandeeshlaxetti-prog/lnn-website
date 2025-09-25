@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import FAQSchema from "@/components/ui/faq-schema";
 
 // Futuristic Services Page for LNN Legal
 // TailwindCSS + Framer Motion animations
@@ -268,23 +269,45 @@ export default function ServicesPage() {
         />
         <ServicesGrid />
         
-        {/* FAQ Section */}
+        {/* FAQ Section with Schema */}
         <section className="mx-auto max-w-6xl px-6 py-14">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-white text-center mb-12">Frequently Asked Questions</h2>
-          <div className="mt-6 space-y-4">
-            <details className="rounded-xl border border-gray-700 p-4 bg-gray-800/70 backdrop-blur">
-              <summary className="cursor-pointer font-medium text-white text-center">Do you handle urgent injunctions?</summary>
-              <p className="mt-2 text-gray-300 text-center text-justify">Yes. We prepare and move urgent interim applications (including caveats and urgent mentions) to protect client interests.</p>
-            </details>
-            <details className="rounded-xl border border-gray-700 p-4 bg-gray-800/70 backdrop-blur">
-              <summary className="cursor-pointer font-medium text-white text-center">Which courts and forums do you appear in?</summary>
-              <p className="mt-2 text-gray-300 text-center text-justify">Civil/Commercial Courts, Sessions/High Court, DRT, NCLT, Consumer Commissions, and other tribunals.</p>
-            </details>
-            <details className="rounded-xl border border-gray-700 p-4 bg-gray-800/70 backdrop-blur">
-              <summary className="cursor-pointer font-medium text-white text-center">Do you work with startups and SMEs?</summary>
-              <p className="mt-2 text-gray-300 text-center text-justify">Yes. We offer corporate advisory, contracts, compliance, and legal trainings for startups and SMEs.</p>
-            </details>
-          </div>
+          <FAQSchema 
+            faqs={[
+              {
+                question: "What areas of law do you specialize in?",
+                answer: "We specialize in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Our experienced advocates provide comprehensive legal services across multiple practice areas."
+              },
+              {
+                question: "How do I schedule a consultation with LNN Legal?",
+                answer: "You can schedule a consultation by calling us at +91-9033286123, emailing us at nandeesh@lnnlegal.in, or visiting our office at 53/1, Divya Maple, 2nd Floor, 16th Cross, 8th Main Road, Malleshwaram, Bengaluru."
+              },
+              {
+                question: "Do you handle cases outside Bengaluru?",
+                answer: "Yes, we handle cases across Karnataka and can provide legal consultation for matters throughout India. Our advocates appear in various courts and tribunals across the state."
+              },
+              {
+                question: "What are your consultation fees?",
+                answer: "Consultation fees vary based on the complexity of the matter and the type of legal service required. We offer competitive rates and transparent fee structures. Please contact us for detailed fee information."
+              },
+              {
+                question: "Which courts and forums do you appear in?",
+                answer: "Our advocates appear in Civil/Commercial Courts, Sessions Court, High Court, Debt Recovery Tribunal (DRT), National Company Law Tribunal (NCLT), Consumer Commissions, and other specialized tribunals."
+              },
+              {
+                question: "Do you work with startups and SMEs?",
+                answer: "Yes, we provide comprehensive legal services for startups and SMEs including corporate advisory, contract drafting, compliance guidance, and legal training programs tailored to business needs."
+              },
+              {
+                question: "Do you handle urgent injunctions?",
+                answer: "Yes. We prepare and move urgent interim applications (including caveats and urgent mentions) to protect client interests in time-sensitive legal matters."
+              },
+              {
+                question: "What is your experience in civil litigation?",
+                answer: "Our advocates have extensive experience in civil litigation including contractual disputes, property matters, commercial litigation, and appellate representation before various courts in Karnataka."
+              }
+            ]}
+            pageTitle="Legal Services FAQ"
+          />
         </section>
       </main>
     </>

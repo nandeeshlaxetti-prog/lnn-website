@@ -45,7 +45,10 @@ export const metadata: Metadata = {
     apple: '/favicon.png',
   },
   verification: {
-    google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE',
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE', // Replace with actual GSC verification code
+    // Add other verification codes as needed:
+    // bing: 'YOUR_BING_VERIFICATION_CODE',
+    // yandex: 'YOUR_YANDEX_VERIFICATION_CODE',
   },
   description:
     'LNN Legal - Premier law firm in Bengaluru providing expert legal counsel. Specializing in civil litigation, criminal defense, real estate law, family law, corporate advisory, consumer protection, and banking law. Trusted advocates for individuals and businesses across Karnataka.',
