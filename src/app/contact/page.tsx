@@ -77,6 +77,15 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Track form submission start
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'form_submit_start', {
+        event_category: 'Contact',
+        event_label: 'Legal Consultation Form',
+        value: 1
+      });
+    }
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -97,11 +106,38 @@ export default function ContactPage() {
           preferredContact: "email",
           urgency: "normal"
         });
+        
+        // Track successful form submission
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'form_submit_success', {
+            event_category: 'Contact',
+            event_label: 'Legal Consultation Form',
+            value: 1
+          });
+        }
       } else {
         setSubmitStatus("error");
+        
+        // Track form submission error
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'form_submit_error', {
+            event_category: 'Contact',
+            event_label: 'Legal Consultation Form',
+            value: 0
+          });
+        }
       }
     } catch (error) {
       setSubmitStatus("error");
+      
+      // Track form submission error
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'form_submit_error', {
+          event_category: 'Contact',
+          event_label: 'Legal Consultation Form',
+          value: 0
+        });
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -171,6 +207,15 @@ export default function ContactPage() {
                 {method.actionType === "phone" ? (
                   <a 
                     href={`tel:${method.actionValue}`}
+                    onClick={() => {
+                      if (typeof window !== 'undefined' && window.gtag) {
+                        window.gtag('event', 'contact_action', {
+                          event_category: 'Contact',
+                          event_label: 'Phone Call',
+                          value: 1
+                        });
+                      }
+                    }}
                     className="w-full bg-[#D4AF37] text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#D4AF37]/90 transition-colors text-sm md:text-base block text-center"
                   >
                     {method.action}
@@ -178,6 +223,15 @@ export default function ContactPage() {
                 ) : method.actionType === "email" ? (
                   <a 
                     href={`mailto:${method.actionValue}`}
+                    onClick={() => {
+                      if (typeof window !== 'undefined' && window.gtag) {
+                        window.gtag('event', 'contact_action', {
+                          event_category: 'Contact',
+                          event_label: 'Email Inquiry',
+                          value: 1
+                        });
+                      }
+                    }}
                     className="w-full bg-[#D4AF37] text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#D4AF37]/90 transition-colors text-sm md:text-base block text-center"
                   >
                     {method.action}
@@ -187,6 +241,15 @@ export default function ContactPage() {
                     href={method.actionValue}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => {
+                      if (typeof window !== 'undefined' && window.gtag) {
+                        window.gtag('event', 'contact_action', {
+                          event_category: 'Contact',
+                          event_label: 'Get Directions',
+                          value: 1
+                        });
+                      }
+                    }}
                     className="w-full bg-[#D4AF37] text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-[#D4AF37]/90 transition-colors text-sm md:text-base block text-center"
                   >
                     {method.action}

@@ -223,14 +223,20 @@ export default function RootLayout({
         {/* Disclaimer Modal */}
         <DisclaimerModal />
         
-        {/* Analytics */}
+        {/* Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XPKESB6MRJ"
+          strategy="afterInteractive"
+        />
         <Script
           id="ga4"
           strategy="afterInteractive"
         >{`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-          gtag('config', 'G-XXXXXXXXXX');
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XPKESB6MRJ');
         `}</Script>
         
         {/* Google Search Console */}
