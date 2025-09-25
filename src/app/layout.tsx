@@ -89,6 +89,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/images/logo/lnn-legal-logo.png" type="image/png" />
+        <link rel="shortcut icon" href="/images/logo/lnn-legal-logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/logo/lnn-legal-logo.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
